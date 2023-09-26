@@ -3,7 +3,7 @@ fpath+=~/.zfunc
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/scotttolinski/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -105,8 +105,6 @@ source ~/.zplug/init.zsh
 # Make sure to use double quotes
 zplug "geometry-zsh/geometry", as:theme
 
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 export DENO_INSTALL="/Users/scotttolinski/.deno"
@@ -123,3 +121,4 @@ export PATH="$PNPM_HOME:$PATH"
 export C_INCLUDE_PATH=$C_INCLUDE_PATH:/usr/local/include
 export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/lib
 
+export PATH="$PATH:$HOME/bin"
