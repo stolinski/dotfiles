@@ -1,0 +1,97 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+shift+alt+cmd+l",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+k",
+    "command": "-editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+s",
+    "command": "workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+cmd+right",
+    "command": "-workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+b",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+d",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "f12",
+    "command": "-editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+t",
+    "command": "editor.action.goToTypeDefinition"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+g",
+    "command": "workbench.view.scm",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "key": "alt+left alt",
+    "command": "editor.action.moveCarretLeftAction"
+  },
+  {
+    "key": "alt+right",
+    "command": "editor.action.moveCarretRightAction"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+w",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+d",
+    "command": "-editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+up",
+    "command": "editor.emmet.action.incrementNumberByOne"
+  },
+  {
+    "key": "shift+cmd+up",
+    "command": "editor.emmet.action.incrementNumberByTen"
+  },
+  {
+    "key": "shift+cmd+down",
+    "command": "editor.emmet.action.decrementNumberByTen"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+down",
+    "command": "editor.emmet.action.decrementNumberByOne"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+r",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "f2",
+    "command": "-editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+c",
+    "command": "workbench.files.action.collapseExplorerFolders"
+  }
+]
