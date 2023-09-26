@@ -1,4 +1,15 @@
 #!/bin/bash
 
-find . -name '.svelte-kit' -type d -prune -print -exec rm -rf '{}' \;
-find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \;
+# Find and delete .svelte-kit directories
+echo "🕵️ Searching for .svelte-kit directories..."
+find ~/Sites -name '.svelte-kit' -type d -prune -print -exec rm -rf '{}' \;
+echo "🗑️ Deleted .svelte-kit directories."
+
+# Find and delete node_modules directories
+echo "🕵️ Searching for .svelte-kit directories..."
+find ~/Sites -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \;
+echo "🗑️ Deleted node_modules directories."
+
+# Add more actions here if needed
+
+echo "✅ Script completed."
